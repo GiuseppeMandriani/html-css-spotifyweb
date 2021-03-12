@@ -8,27 +8,56 @@
 body{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
 /* UTILITIES */
-
-
-.flex{
+.container{
+    max-width: 1200px;
     display: flex;
 }
 
+/* Buttons */
+.btn-upgrade{
+    min-width: 100px;
+    padding: 10px 30px;
+    margin-right: 10px;
+    font-size: 0.85em;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius:20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color:transparent;
+}
+
+
+/* ASIDE-LEFT */
+.aside-left{
+    width: 20%;
+    background-color: antiquewhite;
+}
 
 
 /* MAIN-CONTENT */
 .main-content{
+    position: relative;
     width: 100%;
+    background-color: #141922;
+    padding-top:80px
 }
 
 
 /* TOP-BAR */
 .top-bar{
-    height: 50px;
-    background-color:#ccc;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    line-height: 80px;
+    text-align: right;
+    background-color: rgba(0, 0, 0, .2);
 }
 
 
@@ -38,13 +67,16 @@ body{
 }
 
 
+/* FOOTER */
 
-
-/* ASIDE-LEFT */
-.aside-left{
-height: 100vh;
-background-color: antiquewhite;
+.play-bar{
+    height: 80px;
+    background-color:#ccc
 }
+
+
+
+
 
 
 
