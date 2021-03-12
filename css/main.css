@@ -58,6 +58,98 @@ body{
 }
 
 
+/* Color/Size */
+
+.title-playlist{
+    font-size:0.9rem;
+}
+.descriptions-playlist{
+    color: #7b7e82;
+    font-size: 0.8rem;
+}
+
+
+/* Margin/Padding */
+
+/* margin */
+
+.mg-rg-xs{
+    margin-right: 5px;
+}
+
+.mg-lf-xs{
+    margin-left: 3px;
+}
+
+.mg-bt-xs{
+    margin-bottom: 5px;
+}
+
+.mg-tp-xs{
+    margin-top: 5px;
+}
+
+.mg-tp-sm{
+    margin-top:15px;
+}
+
+.mg-bt-sm{
+    margin-bottom: 15px;
+}
+
+.mg-tp-md{
+    margin-top: 20px;
+}
+
+.mg-bt-md{
+    margin-bottom: 20px;
+}
+
+.mg-tp-lg{
+    margin-top: 30px;
+}
+
+.mg-bt-lg{
+    margin-bottom: 30px;
+}
+
+.mg-bt-xl{
+    margin-bottom: 50px;
+}
+
+.mg-tp-xl{
+    margin-top: 50px;
+}
+
+
+
+/* padding */
+
+.pd-tp-sm{
+    padding-top:20px;
+}
+
+.pd-bt-sm{
+    padding-bottom:20px;
+}
+
+.pd-tp-md{
+    padding-top:50px;
+}
+
+.pd-bt-md{
+    padding-bottom: 50px;
+}
+
+.pd-lf-md{
+    padding-left: 25px;
+}
+
+.pd-lf-xs{
+    padding-left: 5px;
+}
+
+
 /* ASIDE-LEFT */
 .aside-left{
     flex-basis: 20%;
@@ -99,6 +191,7 @@ body{
 
 .app-content{
     height: calc(100vh - 160px);
+    padding: 0 25px;
 }
 
 
@@ -122,6 +215,10 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.categories .col .title.circle img{
+    border-radius: 50%;
 }
 
 
