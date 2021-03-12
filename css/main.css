@@ -7,5 +7,45 @@
 
 body{
     font-size: 14px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/* UTILITIES */
+
+
+.flex{
+    display: flex;
+}
+
+
+
+/* MAIN-CONTENT */
+.main-content{
+    width: 100%;
+}
+
+
+/* TOP-BAR */
+.top-bar{
+    height: 50px;
+    background-color:#ccc;
+}
+
+
+
+.menu{
+    background-color:aqua
+}
+
+
+
+
+/* ASIDE-LEFT */
+.aside-left{
+height: 100vh;
+background-color: antiquewhite;
+}
+
+
+
+
