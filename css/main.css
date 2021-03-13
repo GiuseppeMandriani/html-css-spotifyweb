@@ -13,6 +13,83 @@ body{
 
 /* UTILITIES */
 
+/* Positions margin e padding */
+
+/* margin */
+
+.mg-rg-xs{
+    margin-right: 5px;
+}
+
+.mg-lf-xs{
+    margin-left: 3px;
+}
+.mg-rt-xs{
+    margin-right:5px;
+}
+
+.mg-bt-xs{
+    margin-bottom: 5px;
+}
+
+.mg-tp-xs{
+    margin-top: 5px;
+}
+
+.mg-tp-sm{
+    margin-top:15px;
+}
+
+.mg-bt-sm{
+    margin-bottom: 15px;
+}
+
+.mg-tp-md{
+    margin-top: 20px;
+}
+
+.mg-bt-md{
+    margin-bottom: 20px;
+}
+
+.mg-tp-lg{
+    margin-top: 30px;
+}
+
+.mg-bt-lg{
+    margin-bottom: 30px;
+}
+
+.mg-bt-xl{
+    margin-bottom: 50px;
+}
+
+.mg-tp-xl{
+    margin-top: 50px;
+}
+
+
+
+/* padding */
+
+.pd-tp-sm{
+    padding-top:20px;
+}
+
+.pd-bt-sm{
+    padding-bottom:20px;
+}
+
+.pd-tp-md{
+    padding-top:50px;
+}
+
+.pd-bt-md{
+    padding-bottom: 50px;
+}
+
+/* Container */
+
 .container{
     display: flex;
     min-width: 1200px;
@@ -32,6 +109,15 @@ body{
     text-transform: uppercase;
     cursor: pointer;
     background-color:transparent;
+}
+
+.playlist{
+    background-color:transparent;
+    border: 0;
+    color: #ccc;
+    width: 80%;
+    margin-top:10px;
+    font-size:0.75rem;
 }
 
 /* Menu */
@@ -70,9 +156,9 @@ body{
 
 .menu-nav li{
     height: 30px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     list-style: none;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     line-height:30px ;
 }
 .menu-nav li:last-child{
@@ -80,14 +166,14 @@ body{
 }
 
 .menu-nav li img{
-    max-width: 25px;
+    max-width: 20px;
     vertical-align: middle;
 }
 
 .menu-nav li a{
     font-size: 0.70rem;
     font-weight: 600;
-    color: #fff;
+    color: #707070;
     text-decoration: none;
     margin-left: 5px;
 
@@ -127,10 +213,33 @@ body{
     height:100%;
 }
 
+.library{
+    padding-left: 15px;
+}
+
+/* .play-list{
+    overflow-y: auto;
+} */
+
 /* Aside-bottom */
 .aside-bottom{
     height: 80px;
     background-color:lightgreen;
+    padding-left: 15px;
+    font-size: 0.75rem;
+    color: #707070;
+}
+
+.aside-bottom a{
+    display:inline-block;
+    font-size: 0.70rem;
+    font-weight: 600;
+    color: #707070;
+    text-decoration: none;  
+    width: 80%;
+    height:40px;
+    line-height:40px;
+    border-bottom: 1px solid currentColor;
 }
 
 
