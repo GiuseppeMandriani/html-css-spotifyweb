@@ -120,6 +120,7 @@ body{
     font-size:0.75rem;
 }
 
+
 /* Menu */
 
 /* menu-nav */
@@ -176,8 +177,22 @@ body{
     color: #707070;
     text-decoration: none;
     margin-left: 5px;
+}
 
+/* Text class */
+.album-title{
+    font-size:.85rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
+.album-description{
+    color: #707070;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 
@@ -298,6 +313,16 @@ body{
 
 
 /* Categories */
+
+.row{
+    padding: 20px 10px;
+}
+
+.row p{
+    font-size:0.85rem;
+    color: #707070;
+
+}
 .categories{
     display: flex;
     padding-top:15px;
@@ -306,6 +331,15 @@ body{
 .categories .col{
     width: calc(100% / 6);
     padding: 5px;
+
+}
+
+
+.col .title .album-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
 
 }
 
