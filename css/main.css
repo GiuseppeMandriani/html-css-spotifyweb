@@ -224,10 +224,15 @@ body{
 /* Aside-bottom */
 .aside-bottom{
     height: 80px;
-    background-color:lightgreen;
     padding-left: 15px;
     font-size: 0.75rem;
     color: #707070;
+}
+
+.aside-bottom img{
+    width:1rem;
+    vertical-align:middle;
+    margin-right: 5px;
 }
 
 .aside-bottom a{
@@ -240,6 +245,18 @@ body{
     height:40px;
     line-height:40px;
     border-bottom: 1px solid currentColor;
+}
+
+.aside-bottom a:last-child{
+    color: #fff;
+    font-size: 1rem;
+    border-bottom:0;
+}
+.aside-bottom img.access{
+    width: 1.3rem;
+    background-color:#ccc;
+    border-radius:50%;
+    margin-right: 10px;
 }
 
 
