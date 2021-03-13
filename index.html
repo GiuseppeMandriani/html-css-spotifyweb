@@ -6,84 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- ICON -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'
-    integrity='sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=='
-    crossorigin='anonymous' />
+        integrity='sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=='
+        crossorigin='anonymous' />
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="./css/main.css">
     <title>Spotify Web</title>
 </head>
 <body>
     <div class="container">
-
         <!-- ASIDE LEFT -->
-
-        <section class="aside-left">
+        <div class="aside-left">
             <!-- Aside-Top -->
-
+            <div class="aside-top">
+                <!-- Logo -->
                 <div class="logo">
-                    <img src="./img/logo.svg" alt="logo Spotify">
+                    <img src="./img/logo.svg" alt="Logo Spotify">
                 </div>
+                <!-- Library -->
+                <div class="library">
+                    <!-- Search -->
+
+
+
+                    <!-- My library -->
+                </div>
+            </div>
+
+
 
             <!-- Aside-Bottom -->
-                <div class="aside-content">
-                    <div class="search">
-                        <img src="./img/home.svg" alt="Home">
-                        <a href="">Home</a>
-                    </div>
-                    <div class="search">
-                        <img src="./img/search.svg" alt="Cerca">
-                        <a href="">Cerca</a>
-                    </div>
-                    <div class="search">
-                        <img src="./img/libreria.svg" alt="Libreria">
-                        <a href="">La tua libreria</a>
-                    </div>
+            <div class="aside-bottom">
+                Account
 
-                    <!-- Playlist -->
+            </div>
 
-                    <h5>playlist</h5>
-
-                    <div class="search">
-                        <span class="add"><i class="fas fa-plus"></i></span>
-                        <a href="">Crea Playlist</a>
-                    </div>
-
-                    <div class="search vertical">
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                        <a href="">Nome Playlist</a>
-                    </div>
-
-                    <div class="app-account">
-                        <i class="fas fa-download"></i><a href="">Installa App</a>
-
-                    </div>
-
-
-                </div>
-        </section>
-
-        <!-- MAIN-CONTENT -->
-
-        <main class="main-content">
-            
-            <!-- TOP-BAR -->
-            <section class="top-bar">
+        </div>
+        
+        <!-- MAIN -->
+        <div class="main-content">
+            <!-- Top-Bar -->
+            <div class="top-bar">
                 <button class="btn-upgrade">effettua l'upgrade</button>
-            </section>
-            
-            
-            <!-- App-content-scroll -->
+            </div>
+
+            <!-- Content-Scroll -->
             <div class="app-content">
-                <!-- MENU -->
-                <section class="menu">
+                <!-- Menu -->
+                <div class="menu">
                     <nav>
                         <ul class="menu-inline">
                             <li><a href="">in evidenza</a></li>
@@ -94,117 +66,131 @@
                             <li><a href="">scopri</a></li>
                         </ul>
                     </nav>
-                </section>
-        
-                <!-- CATEGORIES -->
+                </div>
+
+                <!-- Categories -->
 
                 <!-- Row 1 -->
-                <div class="row mg-tp-md mg-bt-md">
-                    <h2 class="pd-lf-xs mg-bt-sm ">Recently played</h2>
-                    <section class="categories">
+                <div class="row">
+                    <h2 class="">Recently played</h2>
+                    <div class="categories">
                         <div class="col">
                             <div class="title">
                                 <img src="./img/metal_lifting.jpg" alt="heavy metal">
-                                <h4 class="title-playlist mg-tp-xs">Heavy Metal</h4>
-                                <span class="descriptions-playlist mg-tp-xs">Subtitle</span>
                             </div>
-                            
                         </div>
+    
                         <div class="col">
                             <div class="title">
                                 <img src="./img/stranger.jpeg" alt="stranger-things">
-                                <h4 class="title-playlist mg-tp-xs">Stranger Things, Vol. 1 (A Netflix Original Series Soundtrack)</h4>
-                                <span class="descriptions-playlist mg-tp-xs">Kyle Dixon & Michael Stein</span>
                             </div>
                         </div>
+    
                         <div class="col">
                             <div class="title">
                                 <img src="./img/aquietplace.jpeg" alt="quiet place">
-                                <h4 class="title-playlist mg-tp-xs">A quiet place</h4>
-                                <span class="descriptions-playlist mg-tp-xs">Subtitle</span>
                             </div>
-                            
                         </div>
+    
                         <div class="col">
                             <div class="title">
                                 <img src="./img/split.jpeg" alt="Split">
-                                <h4 class="title-playlist mg-tp-xs">Split</h4>
-                                <span class="descriptions-playlist mg-tp-xs">Kyle Dixon & Michael Stein</span>
                             </div>
                         </div>
+    
                         <div class="col">
                             <div class="title">
                                 <img src="./img/cure.jpeg" alt="Cure">
-                                <h4 class="title-playlist mg-tp-xs">A cure for welness</h4>
-                                <span class="descriptions-playlist mg-tp-xs">Subtitle</span>
                             </div>
                         </div>
+    
                         <div class="col">
                             <div class="title">
                                 <img src="./img/sinister.jpeg" alt="Sinister">
-                                <h4 class="title-playlist mg-tp-xs">Sinister</h4>
-                                <span class="descriptions-playlist mg-tp-xs">Subtitle</span>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
 
                 <!-- Row-2 -->
-                <div class="row mg-tp-md mg-bt-md">
-                    <h2 class="pd-lf-xs mg-bt-sm">Creato per John Doe</h2>
-                    <p class="descriptions-playlist pd-lf-xs mg-bt-sm">Più ascolti, più accurati saranno i suggerimenti</p>
-                    <section class="categories">
+                <div class="row">
+                    <h2 class="">Creato per John Doe</h2>
+                    <p class="">Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="categories">
                         <div class="col">
                             <div class="title">
                                 <img src="./img/radar.jpeg" alt="release radar">
-                                <h4 class="title-playlist mg-tp-xs">Release Radar</h4>
                             </div>
-                            
                         </div>
                         <div class="col">
                             <div class="title">
                                 <img src="./img/mixdaily.jpeg" alt="mix-daily">
-                                <h4 class="title-playlist mg-tp-xs">Daily Mix 1</h4>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
 
-                <!-- Row-3 -->
-                <div class="row mg-tp-md mg-bt-md">
-                    <h2 class="pd-lf-xs mg-bt-sm">Artisti più popolari</h2>
-                    <p class="descriptions-playlist pd-lf-xs mg-bt-sm">Più ascolti, più accurati saranno i suggerimenti</p>
-                    <section class="categories">
+                <!-- Row 3 -->
+                <div class="row">
+                    <h2 class="">Artisti più popolari</h2>
+                    <p class="">Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="categories">
                         <div class="col">
-                            <div class="title circle">
+                            <div class="title radius">
                                 <img src="./img/youg.jpeg" alt="Lana del Rey">
-                                <h4 class="title-playlist mg-tp-xs">Lana del Rey</h4>
                             </div>
-                            
                         </div>
                         <div class="col">
-                            <div class="title circle">
+                            <div class="title radius">
                                 <img src="./img/einaudi.jpeg" alt="ainaudi">
-                                <h4 class="title-playlist mg-tp-xs">Ludovico Einaudi</h4>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
+                
             </div>
-        </main>
+
+
+
+
+
+
+
+        </div>
 
     </div>
-    <div class="container">
-        
-            <footer class="play-bar">
-                play-bar
-            </footer>
 
-    </div>
-    
     <!-- FOOTER -->
+    
+    <div class="container">
+        <div class="play-bar">
+            <!-- Album -->
+            <div class="album">
+                Album
+            </div>
+    
+    
+    
+            <!-- Controller -->
+            <div class="controller">
+                Controller
+            </div>
+    
+            <!-- Audio -->
+            <div class="audio">
+                Audio
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
 
 
 </body>
 </html>
-
