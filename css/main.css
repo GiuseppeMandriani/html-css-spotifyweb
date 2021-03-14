@@ -92,7 +92,7 @@ body{
 
 .container{
     display: flex;
-    min-width: 1200px;
+    max-width: 1200px;
     justify-content: center;
 }
 
@@ -129,6 +129,7 @@ body{
     height:50px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu-inline li{
@@ -203,6 +204,16 @@ body{
 .album-description.bar{
     text-align: left;
 
+}
+
+.time-song{
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.time-song.total{
+    /* width: 20%; */
 }
 
 
@@ -322,6 +333,8 @@ body{
 /* Menu */
 
 
+
+
 /* Categories */
 
 .row{
@@ -389,7 +402,6 @@ body{
 
 .left{
     display: flex;
-    width: 50%;
 }
 .album .left img{
     width: 50px;
@@ -424,6 +436,58 @@ body{
     font-size:1.5rem;
 }
 
+/* Controller-bar */
+
+.controller-bar{
+    display: flex;
+    justify-content:space-between; 
+    align-items:center; 
+    width: 100%;
+}
+
+.controller-bar span{
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.controller-bar span.total-time{
+    text-align:right;
+}
+
+.bar-song{
+    display: flex;
+    align-items:center;
+    height: 3px;
+    width: 90%;
+    /* border: 1px solid #5a5a5a; */
+    background-color:#5a5a5a;
+    border-radius:5px;
+    margin: 0 5px;
+}
+
+.bar-song .time-scored-bar{
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    border-radius:5px;
+}
+
+
+.ball{
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color:#adff2f;
+    border-radius:50%;
+
+}
+
+
+
+
+
+
+
 
 
 .audio{
@@ -431,3 +495,19 @@ body{
     height:100%;
     background-color:#ddd;
 }
+
+
+
+
+
+/* Hover */
+
+.controller:hover .time-scored-bar{
+    background-color:#adff2f;
+}
+
+.controller:hover .ball{
+    display: block;
+}
+
+
