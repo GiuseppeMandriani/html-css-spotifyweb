@@ -443,6 +443,7 @@ body{
     justify-content:space-between; 
     align-items:center; 
     width: 100%;
+    cursor:pointer;
 }
 
 .controller-bar span{
@@ -459,7 +460,6 @@ body{
     align-items:center;
     height: 3px;
     width: 90%;
-    /* border: 1px solid #5a5a5a; */
     background-color:#5a5a5a;
     border-radius:5px;
     margin: 0 5px;
@@ -472,15 +472,35 @@ body{
     border-radius:5px;
 }
 
-
-.ball{
+.bar-song .time-scored-bar-hov{
     display: none;
+    width: 20%;
+    height: 100%;
+    border-radius:5px;
+    background-color:#adff2f;
+}
+.bar-song::after{
+    display: inline-block;
+    content:"";
     width: 10px;
     height: 10px;
     background-color:#adff2f;
     border-radius:50%;
+}
+
+.box{
+    display: inline-block;
+    width: 20%;
+    height: 3px;
+    border-radius:5px;
+    background-color:#adff2f;
+    display: none;
 
 }
+
+
+
+
 
 
 
@@ -501,13 +521,14 @@ body{
 
 
 /* Hover */
-
-.controller:hover .time-scored-bar{
-    background-color:#adff2f;
+.controller:hover .bar-song .time-scored-bar{
+    display: none;
 }
 
-.controller:hover .ball{
+.controller:hover .bar-song .time-scored-bar-hov{
     display: block;
 }
+
+
 
 
