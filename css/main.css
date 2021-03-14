@@ -93,7 +93,7 @@ body{
 .container{
     display: flex;
     max-width: 1200px;
-    justify-content: center;
+    margin:0 auto;
 }
 
 /* Buttons */
@@ -150,11 +150,26 @@ body{
 }
 
 .menu-inline li a{
+    display: inline-block;
+    position:relative;
     font-size: 0.75rem;
     font-weight: 600;
     color: #7d7f84;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+
+.menu-inline li a::before{
+    position:absolute;
+    bottom: -5px;
+    left: 50%;
+    transform:translate(-50%, 0);
+    display:inline-block;
+    content:"";
+    width: 30px;
+    height: 2px;
+    background-color:#adff2f;
 }
 
 .menu-nav{
@@ -166,11 +181,12 @@ body{
 
 .menu-nav li{
     height: 30px;
-    /* padding-left: 10px; */
     list-style: none;
     margin-bottom: 5px;
     line-height:30px ;
+    border-left: 2px solid transparent;
 }
+
 .menu-nav li:last-child{
     margin-bottom: 0;
 }
@@ -186,6 +202,11 @@ body{
     color: #707070;
     text-decoration: none;
     margin-left: 5px;
+}
+
+.menu-nav li:hover{
+    border-left: 2px solid #adff2f;
+
 }
 
 /* Text class */
