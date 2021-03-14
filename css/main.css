@@ -120,6 +120,14 @@ body{
     font-size:0.75rem;
 }
 
+.btn-sound{
+    background-color:transparent;
+    border: none;
+    color: #707070;
+    margin-right: 10px;
+    font-size: .70rem;
+}
+
 
 /* Menu */
 
@@ -206,15 +214,6 @@ body{
 
 }
 
-.time-song{
-    color: #fff;
-    font-size: 0.7rem;
-    font-weight: 500;
-}
-
-.time-song.total{
-    /* width: 20%; */
-}
 
 
 
@@ -448,12 +447,10 @@ body{
 
 .controller-bar span{
     color: #fff;
-    font-size: 0.7rem;
-    font-weight: 500;
+    font-size: 0.6rem;
+    font-weight: 600;
 }
-.controller-bar span.total-time{
-    text-align:right;
-}
+
 
 .bar-song{
     display: flex;
@@ -465,21 +462,22 @@ body{
     margin: 0 5px;
 }
 
-.bar-song .time-scored-bar{
+.time-scored-bar{
     width: 20%;
     height: 100%;
     background-color: #fff;
     border-radius:5px;
 }
 
-.bar-song .time-scored-bar-hov{
+.time-scored-bar-hov{
     display: none;
     width: 20%;
     height: 100%;
     border-radius:5px;
     background-color:#adff2f;
 }
-.bar-song::after{
+
+.controller-bar .bar-song::after{
     display: inline-block;
     content:"";
     width: 10px;
@@ -488,33 +486,27 @@ body{
     border-radius:50%;
 }
 
-.box{
-    display: inline-block;
-    width: 20%;
-    height: 3px;
-    border-radius:5px;
-    background-color:#adff2f;
-    display: none;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
+/* Audio */
 
 .audio{
+    display: flex;
     width: 20%;
-    height:100%;
-    background-color:#ddd;
+    justify-content:center;
 }
+
+.audio-content{
+    min-width: 100%;
+    display: flex;
+    align-items:center;
+}
+
+.audio-content:after{
+    content:"";
+    width:30%;
+    height:3px;
+    /* background-color:red; */
+}
+
 
 
 
