@@ -14,6 +14,16 @@ body{
 
 /* UTILITIES */
 
+/* Margin/Padding */
+
+.mg-lf-xs{
+    margin-left: 5px;
+}
+.mg-rt-xs{
+    margin-right:5px;
+}
+
+
 /* Buttons */
 
 .btn-upgrade{
@@ -31,12 +41,12 @@ body{
 }
 
 .btn-add{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     color: #000;
     background-color:#a3a3a3;
     text-align: center;
-    line-height:30px;
+    line-height:20px;
     margin-right: 5px;
 }
 
@@ -60,7 +70,6 @@ body{
 .menu-inline li a{
     position:relative;
     font-size: 0.75rem;
-    font-weight: 600;
     color: #7d7f84;
     text-transform: uppercase;
     text-decoration: none;
@@ -76,9 +85,8 @@ body{
     height: 30px;
     list-style: none;
     margin-bottom: 5px;
-    line-height:30px ;
     border-left: 3px solid transparent;
-    padding-left:15px;
+    padding:0 5px;
 }
 
 .menu-nav li:last-child{
@@ -119,14 +127,14 @@ body{
 
 /* Sidebar */
 .sidebar{
-    flex-basis: 230px;
+    flex-basis: 250px;
     background-color: #000;
 }
 
 /* Sidebar-top */
 .sidebar-top{
     height:calc(100% - 80px);
-    min-height: 300px;
+    min-height: 400px;
     overflow:auto;
 }
 
@@ -148,7 +156,7 @@ body{
 
 .menu-nav li a{
     font-size: 0.70rem;
-    font-weight: 600;
+    font-weight: 500;
     color: #707070;
     text-decoration: none;
 }
@@ -161,7 +169,7 @@ body{
 /* Library */
 
 .sidebar-top h5{
-    padding-left: 18px;
+    padding-left: 8px;
     margin: 15px 0;
 }
 
@@ -171,8 +179,32 @@ body{
 /* Sidebar-bottom */
 .sidebar-bottom{
     height: 80px;
-    background-color:#000;
 }
+
+.sidebar-bottom a{
+    display: inline-block;
+    height: 40px;
+    font-size: .7rem;
+    text-decoration: none;
+    color: #707070;
+    border-bottom: 1px solid #707070;
+    line-height:40px;
+    margin: 0 5px;
+}
+.sidebar-bottom a img{
+    width: 1rem;
+    background-color:#ccc;
+    border-radius:50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sidebar-bottom a:last-child{
+    border-bottom: 0;
+    color: #fff;
+}
+
+
 
 /* Content */
 .content{
@@ -298,7 +330,7 @@ body{
 
 .player-album,
 .player-sound{
-    flex-basis: 230px;
+    flex-basis: 250px;
 }
 
 
