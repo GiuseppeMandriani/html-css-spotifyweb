@@ -16,19 +16,22 @@
     <title>Spotify Web</title>
 </head>
 <body>
-    <div class="container">
-        <!-- ASIDE LEFT -->
-        <div class="aside-left">
-            <!-- Aside-Top -->
-            <div class="aside-top">
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="./img/logo.svg" alt="Logo Spotify">
-                </div>
-                <!-- Library -->
-                <div class="library">
-                    <!-- Search -->
-                    <nav>
+    <div class="app">
+        <!-- MAIN CONTENT -->
+        <main class="main-window">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+
+                <!-- Sidebar-Top -->
+                <section class="sidebar-top">
+
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="./img/logo.svg" alt="Logo Spotify">
+                    </div>
+
+                    <!-- Search-nav -->
+                    <nav class="search">
                         <ul class="menu-nav">
                             <li><img src="./img/home.svg" alt="Home"><a href="">Home</a></li>
                             <li><img src="./img/search.svg" alt="Search"><a href="">Cerca</a></li>
@@ -36,42 +39,39 @@
                         </ul>
                     </nav>
 
-                    <!-- My library -->
+                    <!-- Library -->
+                    <h5 class="mg-tp-sm ">PLAYLIST</h5>
+                    <nav>
+                        <ul class="menu-nav playlist">
+                            <li><i class="fas fa-plus btn-add"></i><a href="">Crea Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                        </ul>
+                    </nav>
 
-                    <div class="play-list">
-                        <h5 class="mg-tp-sm ">PLAYLIST</h5>
-                        <input class="playlist" type="text" placeholder="Nome Playlist">
-                        <input class="playlist" type="text" placeholder="Nome Playlist">
-                        <input class="playlist" type="text" placeholder="Nome Playlist">
-                        <input class="playlist" type="text" placeholder="Nome Playlist">
-                        <input class="playlist" type="text" placeholder="Nome Playlist">
-                        <input class="playlist" type="text" placeholder="Nome Playlist">
-                    </div>
+                </section>
+
+
+                <!-- Sidebar-Bottom -->
+                <section class="sidebar-bottom">Account</section>
+            </aside>
+
+            <!-- Content -->
+            <div class="content">
+                <!-- Top Bar -->
+                <div class="content-top-bar">
+                    <button class="btn-upgrade">effettua l'upgrade</button>
                 </div>
-            </div>
 
-
-
-            <!-- Aside-Bottom -->
-            <div class="aside-bottom">
-                <a href=""><img src="./img/download.svg" alt="download">Installa app</a>
-                <a href=""><img class="access" src="./img/profile.svg" alt="download">John Doe</a>
-
-            </div>
-
-        </div>
-        
-        <!-- MAIN -->
-        <div class="main-content">
-            <!-- Top-Bar -->
-            <div class="top-bar">
-                <button class="btn-upgrade">effettua l'upgrade</button>
-            </div>
-
-            <!-- Content-Scroll -->
-            <div class="app-content">
-                <!-- Menu -->
-                <div class="menu">
+                <!-- Content-Scroll -->
+                <div class="scrollable">
+                    <!-- Menu-nav -->
+                    <div class="content-menu">
                     <nav>
                         <ul class="menu-inline">
                             <li><a href="">in evidenza</a></li>
@@ -82,192 +82,135 @@
                             <li><a href="">scopri</a></li>
                         </ul>
                     </nav>
-                </div>
+                    </div>
 
-                <!-- Categories -->
+                    <!-- Category -->
 
-                <!-- Row 1 -->
-                <div class="row">
-                    <h2 class="">Recently played</h2>
-                    <div class="categories">
-                        <div class="col">
-                            <div class="title">
-                                <img src="./img/metal_lifting.jpg" alt="heavy metal">
+                    <!-- Row 1 -->
+                    <section class="content-category">
+                        <h2>Recently played</h2>
+                        <ul class="album-list">
+                            <li class="album">
+                                <div class="layover">
+                                    <img src="./img/metal_lifting.jpg" alt="heavy metal">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">Heavy Metal</span>
                                     <span class="album-description">Subtitle</span>
                                 </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="title">
-                                <img src="./img/stranger.jpeg" alt="stranger-things">
+                            </li>
+                            <li class="album">              
+                                <div class="layover">
+                                    <img src="./img/stranger.jpeg" alt="stranger-things">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">Stranger Things, Vol. 1 (A Netflix Original Series Soundtrack)</span>
                                     <span class="album-description">Kyle Dixon & Michael Stein</span>
                                 </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="title">
-                                <img src="./img/aquietplace.jpeg" alt="quiet place">
+                            </li>
+                            <li class="album">              
+                                <div class="layover">
+                                    <img src="./img/aquietplace.jpeg" alt="quiet place">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">A quiet place</span>
                                     <span class="album-description">Subtitle</span>
                                 </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="title">
-                                <img src="./img/split.jpeg" alt="Split">
+                            </li>
+                            <li class="album">              
+                                <div class="layover">
+                                    <img src="./img/split.jpeg" alt="Split">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">Split</span>
                                     <span class="album-description">Subtitle</span>
                                 </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="title">
-                                <img src="./img/cure.jpeg" alt="Cure">
+                            </li>
+                            <li class="album">              
+                                <div class="layover">
+                                    <img src="./img/cure.jpeg" alt="Cure">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">A cure for wellness </span>
                                     <span class="album-description">Subtitle</span>
                                 </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="title">
-                                <img src="./img/sinister.jpeg" alt="Sinister">
+                            </li>
+                            <li class="album">              
+                                <div class="layover">
+                                    <img src="./img/sinister.jpeg" alt="Sinister">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">Sinister</span>
                                     <span class="album-description">Subtitle</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </li>
+                        </ul>
+                    </section>
 
-                <!-- Row-2 -->
-                <div class="row">
-                    <h2 class="">Creato per John Doe</h2>
-                    <p class="">Più ascolti, più accurati saranno i suggerimenti</p>
-                    <div class="categories">
-                        <div class="col">
-                            <div class="title">
-                                <img src="./img/radar.jpeg" alt="release radar">
+                    <!-- Row 2 -->
+                    <section class="content-category">
+                        <h2>Recently played</h2>
+                        <p class="">Più ascolti, più accurati saranno i suggerimenti</p>
+                        <ul class="album-list">
+                            <li class="album">
+                                <div class="layover">
+                                    <img src="./img/radar.jpeg" alt="release radar">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">Release Radar</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="title">
-                                <img src="./img/mixdaily.jpeg" alt="mix-daily">
+                            </li>
+                            <li class="album">
+                                <div class="layover">
+                                    <img src="./img/mixdaily.jpeg" alt="mix-daily">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">Dailiy Mix 1</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </li>
 
-                <!-- Row 3 -->
-                <div class="row">
-                    <h2 class="">Artisti più popolari</h2>
-                    <p class="">Più ascolti, più accurati saranno i suggerimenti</p>
-                    <div class="categories">
-                        <div class="col">
-                            <div class="title radius">
-                                <img src="./img/youg.jpeg" alt="Lana del Rey">
+                        </ul>
+                    </section>
+
+                    <!-- Row 3 -->
+                    <section class="content-category">
+                        <h2>Recently played</h2>
+                        <p class="">Più ascolti, più accurati saranno i suggerimenti</p>
+                        <ul class="album-list">
+                            <li class="album radius">
+                                <div class="layover">
+                                    <img src="./img/youg.jpeg" alt="Lana del Rey">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">Lana del Rey</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="title radius">
-                                <img src="./img/einaudi.jpeg" alt="einaudi">
+                            </li>
+                            <li class="album radius">
+                                <div class="layover">
+                                    <img src="./img/einaudi.jpeg" alt="einaudi">
+                                </div>
                                 <div class="album-content">
                                     <span class="album-title">Ludovico Einaudi</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
-                
             </div>
+        </main>
 
 
-        </div>
+        <!-- PLAYER -->
+        <footer class="player">
+            <!-- Player-Album -->
+            <div class="player-album">Album</div>
 
+            <!-- Player-controller -->
+            <div class="player-controller">Controller</div>
+
+            <!-- Player-Sound -->
+            <div class="player-sound">Sound</div>
+        </footer>
     </div>
-
-    <!-- FOOTER -->
-    
-    <div class="container">
-        <div class="play-bar">
-            <!-- Album -->
-            <div class="album">
-                <img src="./img/sinister.jpeg" alt="Sinister">
-                
-                <div class="album-content">
-                    <span class="album-title bar">Sinister</span>
-                    <span class="album-description bar">Name Song</span>
-                </div>
-                <a href=""><i class="far fa-heart"></i></a>
-                <a href=""><i class="far fa-folder"></i></a>
-
-            </div>
-    
-    
-    
-            <!-- Controller -->
-            <div class="controller">
-                <div class="music-bar">
-                    <a href=""><i class="fas fa-random"></i></a>
-                    <a href=""><i class="fas fa-step-backward"></i></a>
-                    <a class="f-size" href=""><i class="far fa-play-circle"></i></a>
-                    <a href=""><i class="fas fa-step-forward"></i></a>
-                    <a href=""><i class="fas fa-redo-alt"></i></a>
-                </div>
-
-                <div class="controller-bar">
-                    <span class="">0:25</span>
-                    <div class="bar-song">
-                        <div class="time-scored-bar">
-                        </div>
-                    </div>
-                    <span class="">4:35</span>
-                </div>
-            </div>
-    
-            <!-- Audio -->
-            <div class="audio">
-                <div class="audio-content">
-                    <button class="btn-sound"><i class="fas fa-list"></i></button>
-                    <button class="btn-sound"><i class="fas fa-desktop"></i></button>
-                    <button class="btn-sound"><i class="fas fa-volume-up"></i></button>
-                    <div class="bar-song">
-                        <div class="time-scored-bar">
-                        </div>
-                    </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
 </body>
 </html>
