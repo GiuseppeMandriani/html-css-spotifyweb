@@ -26,9 +26,9 @@
                 <section class="sidebar-top">
 
                     <!-- Logo -->
-                    <div class="logo">
+                    <a href="" class="logo">
                         <img src="./img/logo.svg" alt="Logo Spotify">
-                    </div>
+                    </a>
 
                     <!-- Search-nav -->
                     <nav class="search">
@@ -48,6 +48,7 @@
                             <li><a href="">Nome Playlist</a></li>
                             <li><a href="">Nome Playlist</a></li>
                             <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -55,7 +56,7 @@
 
                 <!-- Sidebar-Bottom -->
                 <section class="sidebar-bottom">
-                    <a href=""><i class="far fa-arrow-alt-circle-down mg-rt-xs"></i>Installa app</a>
+                    <a class="acc" href=""><i class="far fa-arrow-alt-circle-down mg-rt-xs"></i>Installa app</a>
                     <a href=""><img src="./img/profile.svg" alt="download">John Doe</a>
                 </section>
             </div>
@@ -90,8 +91,11 @@
                         <h2>Recently played</h2>
                         <ul class="album-list">
                             <li class="album">
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/metal_lifting.jpg" alt="heavy metal">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">Heavy Metal</span>
@@ -99,8 +103,11 @@
                                 </div>
                             </li>
                             <li class="album">              
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/stranger.jpeg" alt="stranger-things">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">Stranger Things, Vol. 1 (A Netflix Original Series Soundtrack)</span>
@@ -108,8 +115,11 @@
                                 </div>
                             </li>
                             <li class="album">              
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/aquietplace.jpeg" alt="quiet place">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">A quiet place</span>
@@ -117,8 +127,11 @@
                                 </div>
                             </li>
                             <li class="album">              
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/split.jpeg" alt="Split">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">Split</span>
@@ -126,8 +139,11 @@
                                 </div>
                             </li>
                             <li class="album">              
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/cure.jpeg" alt="Cure">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">A cure for wellness </span>
@@ -135,8 +151,11 @@
                                 </div>
                             </li>
                             <li class="album">              
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/sinister.jpeg" alt="Sinister">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">Sinister</span>
@@ -152,16 +171,22 @@
                         <p class="">Più ascolti, più accurati saranno i suggerimenti</p>
                         <ul class="album-list">
                             <li class="album">
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/radar.jpeg" alt="release radar">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">Release Radar</span>
                                 </div>
                             </li>
                             <li class="album">
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/mixdaily.jpeg" alt="mix-daily">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">Dailiy Mix 1</span>
@@ -177,16 +202,22 @@
                         <p class="">Più ascolti, più accurati saranno i suggerimenti</p>
                         <ul class="album-list">
                             <li class="album radius">
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/youg.jpeg" alt="Lana del Rey">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">Lana del Rey</span>
                                 </div>
                             </li>
                             <li class="album radius">
-                                <div class="layover">
+                                <div class="lay">
                                     <img src="./img/einaudi.jpeg" alt="einaudi">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
                                 <div class="album-content">
                                     <span class="album-title">Ludovico Einaudi</span>
@@ -202,14 +233,20 @@
         <footer class="player">
             <!-- Player-Album -->
             <div class="player-album">
-                <img src="./img/sinister.jpeg" alt="Sinister">
-                <div class="album-content">
-                    <span class="album-title">Sinister</span>
-                    <span class="album-description">Name Song</span>
+                <!-- Left -->
+                <div class="lt">
+                    <img src="./img/sinister.jpeg" alt="Sinister">
+                    <ul class="play-content">
+                        <li><a href="">Sinister</a></li>
+                        <li><a href="">Name Song</a></li>
+                    </ul>
                 </div>
+
                 <div class="add">
-                    <button class="btn-icons"><i class="far fa-heart"></i></button>
-                    <button class="btn-icons"><i class="far fa-folder"></i></button>
+                    <ul class="menu-inline">
+                        <li><button class="btn-icons"><i class="far fa-heart i-hov"></i></button></li>
+                        <li><button class="btn-icons"><i class="far fa-folder i-hov"></i></button></li>
+                    </ul>
                 </div>
 
             </div>
@@ -218,11 +255,13 @@
             <div class="player-controller">
                 <!-- Music-bar -->
                 <div class="music-bar">
-                    <a href=""><i class="fas fa-random"></i></a>
-                    <a href=""><i class="fas fa-step-backward"></i></a>
-                    <a class="f-size" href=""><i class="far fa-play-circle"></i></a>
-                    <a href=""><i class="fas fa-step-forward"></i></a>
-                    <a href=""><i class="fas fa-redo-alt"></i></a>
+                    <ul class="menu-inline">
+                        <li><a href=""><i class="fas fa-random"></i></a></li>
+                        <li><a href=""><i class="fas fa-step-backward"></i></a></li>
+                        <li class="play"><a href=""><i class="far fa-play-circle"></i></a></li>
+                        <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                        <li><a href=""><i class="fas fa-redo-alt"></i></a></li>
+                    </ul>
                 </div>
                 <!-- Controller-bar -->
                 <div class="controller-bar">
@@ -237,9 +276,12 @@
 
             <!-- Player-Sound -->
             <div class="player-sound">
-                <button class="btn-icons"><i class="fas fa-list"></i></button>
-                <button class="btn-icons"><i class="fas fa-desktop"></i></button>
-                <button class="btn-icons"><i class="fas fa-volume-up"></i></button>
+                <ul class="menu-inline">
+                    <li><button class="btn-icons"><i class="fas fa-list"></i></button></li>
+                    <li><button class="btn-icons"><i class="fas fa-desktop"></i></button></li>
+                    <li><button class="btn-icons"><i class="fas fa-volume-up"></i></button></li>
+                </ul>
+                
                 <div class="bar-song">
                     <div class="time-scored-bar">
                     </div>
