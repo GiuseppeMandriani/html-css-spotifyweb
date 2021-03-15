@@ -30,7 +30,7 @@ body{
     min-width: 100px;
     padding: 10px 30px;
     margin-right: 30px;
-    font-size: 0.85em;
+    font-size: 0.85rem;
     color: #fff;
     border: 1px solid #fff;
     border-radius:20px;
@@ -287,6 +287,10 @@ body{
     margin-top:5px;
 }
 
+.content-category h2{
+    margin: 15px 0;
+}
+
 .album-list{
     display: flex;
     flex-wrap: wrap;
@@ -393,10 +397,6 @@ body{
     color: #707070;
 }
 
-
-
-
-
 /* Player-controller */
 .player-controller{
     display: flex;
@@ -469,9 +469,7 @@ body{
 }
 
 
-
-
-/* HOVER */
+/* HOVER EFFECT */
 
 /* SIDEBAR */
 
@@ -518,6 +516,7 @@ body{
 /* Row / Album */
 .album:hover .layover{
     opacity:1;
+    cursor: pointer;
 }
 
 
@@ -548,6 +547,60 @@ color: #adff2f;
     transform: scale(1.2);
     color: #adff2f;
 }
+
+/* RESPONSIVE FOR DESKTOP/TABLET  da 1024px a 768*/
+
+@media screen and (max-width:1024px){
+
+/* GENERAL */
+body {
+    font-size:12px;
+}
+
+/* Content Scroll */
+.content-menu .menu-inline{
+    flex-wrap: wrap;
+}
+
+/* Menu Nav */
+
+
+/* Category */
+.content-category{
+    margin-bottom: 15px;
+}
+
+.content-category h2{
+    margin: 10px 0;
+}
+
+.album-list .album{
+    flex-basis: calc(100% / 4 - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position:relative;
+}
+
+/* Capire rem em */
+
+}
+
+/* RESPONSIVE FOR TABLET/SMARTPHONE  da 767px a 601*/
+@media screen and (max-width:767px){
+
+/* Category */
+
+.album-list .album{
+    flex-basis: calc(100% / 2 - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position:relative;
+}
+
+}
+
 
 
 
