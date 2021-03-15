@@ -95,7 +95,7 @@ body{
     list-style: none;
     margin-bottom: 5px;
     border-left: 3px solid transparent;
-    padding:0 5px;
+    padding:0 15px;
 }
 
 .menu-nav li:last-child{
@@ -137,7 +137,8 @@ body{
 /* Sidebar */
 .sidebar{
     flex-basis: 250px;
-    background-color: #000;
+    background-color:#000;
+    flex-shrink: 0;
 }
 
 /* Sidebar-top */
@@ -153,6 +154,12 @@ body{
     display: flex;
     align-items: center;
     height: 80px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.sidebar-top .logo img{
+    width:150px;
 }
 
 /* Search-nav*/
@@ -169,6 +176,10 @@ body{
     text-decoration: none;
 }
 
+.playlist .menu-nav li:first-child a{
+    font-size:1rem;
+}
+
 
 .search .menu-nav li:hover{
     border-left: 3px solid #adff2f;
@@ -178,7 +189,7 @@ body{
 
 .sidebar-top h5{
     padding-left: 8px;
-    margin: 15px 0;
+    margin: 15px 10px;
 }
 
 
@@ -190,14 +201,14 @@ body{
 }
 
 .sidebar-bottom a{
-    display: inline-block;
+    display: block;
     height: 40px;
     font-size: .7rem;
     text-decoration: none;
     color: #707070;
     border-bottom: 1px solid #707070;
     line-height:40px;
-    margin: 0 5px;
+    margin: 0 15px;
 }
 .sidebar-bottom a img{
     width: 1rem;
@@ -210,6 +221,8 @@ body{
 .sidebar-bottom a:last-child{
     border-bottom: 0;
     color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 
