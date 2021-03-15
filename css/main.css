@@ -14,6 +14,7 @@ body{
 
 /* UTILITIES */
 
+
 /* Margin/Padding */
 
 .mg-lf-xs{
@@ -117,6 +118,12 @@ body{
     font-size: 0.7rem;
     font-weight: 600;
     text-align: center;
+}
+
+/* Responsive */
+
+.none{
+    display: none;
 }
 
 
@@ -598,6 +605,30 @@ body {
     margin-top: 10px;
     position:relative;
 }
+
+}
+
+/* RESPONSIVE FOR SMARTPHONE DA 600 A SCENDERE */
+
+@media screen and (max-width:600px){
+    /* SIDEBAR */
+    .sidebar{
+        flex-basis:50px;
+    }
+
+    .sidebar .logo{
+        padding-left: 10px;
+    }
+
+    .sidebar a.logo img{
+        display: none;
+    }
+
+    .sidebar a.logo img.none{
+        display: block;
+        width: 30px;
+    }
+
 
 }
 
