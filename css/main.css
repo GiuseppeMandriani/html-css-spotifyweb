@@ -475,10 +475,11 @@ body{
 }
 
 /* Player-sound */
-.player-sound::after{
-    content:"";
-    height:3px;
+
+.player-sound .controller-bar{
+    width: 50%;
 }
+
 
 
 /* HOVER EFFECT */
@@ -554,7 +555,14 @@ color: #adff2f;
     background-color:#adff2f;
 }
 
+
 /* Player-sound */
+
+.player-bar:hover .bar-song .time-scored-bar,
+.controller-bar:hover .bar-song .time-scored-bar::after{
+    background-color:#adff2f;
+
+}
 .player-sound .menu-inline li:hover .btn-icons{
     transform: scale(1.2);
     color: #adff2f;
