@@ -158,7 +158,7 @@ body{
 /* Sidebar-top */
 .sidebar-top{
     height:calc(100% - 80px);
-    min-height: 400px;
+    min-height: 300px;
     overflow:auto;
 }
 
@@ -220,7 +220,7 @@ body{
     list-style: none;
     color: #707070;
     margin-left: 15px;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .sidebar-bottom .account-nav li:last-child{
@@ -262,6 +262,7 @@ body{
     background-color:rgba(0, 0, 0, .2);
     text-align: right;
     line-height:80px;
+    z-index: 1;
 }
 
 
@@ -292,9 +293,6 @@ body{
     background-color:transparent;
     height: 2px;
 }
-
-
-
 
 
 /* Category */
@@ -386,6 +384,7 @@ body{
     height:80px;
     display: flex;
     justify-content: space-between;
+    background-color:#282828;
 }
 
 .player-album,
@@ -722,7 +721,27 @@ body {
 .sidebar-bottom .account-nav li:first-child{
     padding-left: 2px;
 }
-    
+
+/* CONTENT */
+
+.btn-upgrade{
+    min-width: 100px;
+    padding: 5px 15px;
+    margin-right: 15px;
+    font-size: 0.65rem;
+    border-radius:20px;
+}
+
+/* Top-bar */
+.content-top-bar{
+    height: 40px;
+    line-height: 40px;
+}
+
+/* Content Scroll */
+.content .scrollable{
+    padding-top:50px;
+}
 
 /* FOOTER */
 .player-album,
