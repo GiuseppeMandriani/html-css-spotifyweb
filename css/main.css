@@ -55,7 +55,6 @@ body{
     background-color:transparent;
     border: none;
     color: #707070;
-    margin-right: 10px;
     font-size: .70rem;
     cursor: pointer;
     transition: .3s;
@@ -192,7 +191,7 @@ body{
 }
 
 .playlist .menu-nav li:first-child a{
-    font-size:1rem;
+    font-size:.8rem;
 }
 
 
@@ -203,39 +202,48 @@ body{
     margin: 15px 10px;
 }
 
-
-
-
 /* Sidebar-bottom */
+
 .sidebar-bottom{
     height: 80px;
 }
 
-.sidebar-bottom a{
-    display: block;
-    height: 40px;
+.sidebar-bottom .account-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sidebar-bottom .account-nav li{
+    border-bottom: 1px solid #707070;
+    width: 80%;
+    list-style: none;
+    color: #707070;
+    margin-left: 15px;
+    padding: 15px 0;
+}
+
+.sidebar-bottom .account-nav li:last-child{
+    border: 0;
+}
+
+.sidebar-bottom .account-nav li a{
     font-size: .7rem;
     text-decoration: none;
     color: #707070;
-    border-bottom: 1px solid #707070;
-    line-height:40px;
-    margin: 0 15px;
 }
-.sidebar-bottom a img{
+
+.sidebar-bottom .account-nav li:last-child a{
+    color: #fff;
+}
+
+.sidebar-bottom .account-nav li img{
     width: 1rem;
     background-color:#ccc;
     border-radius:50%;
     margin-right: 10px;
     vertical-align: middle;
 }
-
-.sidebar-bottom a:last-child{
-    border-bottom: 0;
-    color: #fff;
-    font-size: 0.85rem;
-    font-weight: 600;
-}
-
 
 
 /* Content */
@@ -384,8 +392,9 @@ body{
 .player-sound{
     flex-basis: 250px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 /* Player-Album */
@@ -394,7 +403,7 @@ body{
 }
 
 .player-album img{
-    width: 40px;
+    width: 45px;
 }
 .player-album .play-content li{
     list-style:none;
@@ -417,13 +426,20 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    flex-grow: .8;
+    flex-grow: 1;
 }
 
 /* Music-bar */
 
 .music-bar{
     margin-bottom: 15px;
+}
+
+.player-controller .music-bar .menu-inline li{
+    margin-right: 20px;
+}
+.player-controller .music-bar .menu-inline li:last-child{
+    margin-right: 0;
 }
 
 /* Controller-bar */
@@ -443,7 +459,7 @@ body{
 }
 
 .bar-song{
-    width: 80%;
+    width: 100%;
     height: 3px;
     border-radius:5px;
     background-color:#5a5a5a;
@@ -477,7 +493,7 @@ body{
 /* Player-sound */
 
 .player-sound .controller-bar{
-    width: 50%;
+    margin-left: 15px;
 }
 
 
@@ -505,9 +521,12 @@ body{
 }
 
 /* Sidebar-bottom */
-.sidebar-bottom:hover a{
+.sidebar-bottom .account-nav li:first-child:hover,
+.sidebar-bottom .account-nav li:first-child:hover a{
     color: #fff;
 }
+
+
 
 /* CONTENT */
 
@@ -602,7 +621,6 @@ body {
     position:relative;
 }
 
-/* Capire rem em */
 
 }
 
@@ -618,29 +636,100 @@ body {
     margin-top: 10px;
     position:relative;
 }
+ 
+ 
+/* FOOTER */
+ 
+/* Player */
+ 
+.player-album,
+.player-sound{
+    flex-basis: 200px;
+ 
+}
+
+/* Player-Album */
+
+.player-album .add .menu-inline{
+    flex-direction:column;
+    align-items: flex-start;
+}
+
+.player-album .add .menu-inline li{
+    margin-left: 15px;
+    margin-right: 0;
+}
+ 
+/* Player-Controller */
+ 
+.player-controller .music-bar .menu-inline li button{
+    font-size:0.9rem;
+}
+
 
 }
 
 /* RESPONSIVE FOR SMARTPHONE DA 600 A SCENDERE */
 
 @media screen and (max-width:600px){
-    /* SIDEBAR */
-    .sidebar{
-        flex-basis:50px;
-    }
 
-    .sidebar .logo{
-        padding-left: 10px;
-    }
+/* SIDEBAR */
 
-    .sidebar a.logo img{
-        display: none;
-    }
 
-    .sidebar a.logo img.none{
-        display: block;
-        width: 30px;
-    }
+.sidebar{
+    flex-basis:50px;
+}
+
+/* Sidebar-Top */
+
+.sidebar .logo{
+    padding-left: 10px;
+}
+
+.sidebar a.logo img{
+    display: none;
+}
+
+.sidebar a.logo img.none{
+    display: block;
+    width: 30px;
+}
+
+.sidebar-top .logo{
+    height: 40px;
+}
+.sidebar-top .search .menu-nav li a{
+    display: none;
+}
+.sidebar-top .search .menu-nav li{
+    padding: 0 11px;
+}
+.sidebar h5,
+.sidebar .playlist{
+    display: none;
+}
+
+/* Sidebar-Bottom */
+.sidebar-bottom .account-nav li a{
+    display: none;
+}
+
+.sidebar-bottom .account-nav li{
+    border-bottom: 0;
+    padding: 5px 0;
+}
+
+.sidebar-bottom .account-nav li:first-child{
+    padding-left: 2px;
+}
+    
+
+/* FOOTER */
+.player-album,
+.player-sound{
+     flex-basis: 180px;
+ 
+ }
 
 
 }
