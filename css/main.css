@@ -24,6 +24,10 @@ body{
     margin-right:5px;
 }
 
+/* .logo-special path{
+    fill: green;
+} */
+
 
 /* Buttons */
 
@@ -163,6 +167,10 @@ body{
 }
 
 /* Logo */
+
+.sidebar-top .logo .logo-special.small{
+    display: none;
+}
 
 .sidebar-top .logo{
     display: flex;
@@ -501,6 +509,13 @@ body{
 
 /* SIDEBAR */
 
+/* Logo */
+
+.logo:hover .logo-special path{
+    fill: #adff2f;
+
+}
+
 /* Search-nav */
 .search .menu-nav li:hover{
     border-left: 3px solid #adff2f;
@@ -680,6 +695,16 @@ body {
 }
 
 /* Sidebar-Top */
+
+.sidebar-top .logo .logo-special.small{
+    display: block;
+    /* Prova con svg */
+}
+
+.sidebar .logo-special{
+    display:none;
+    /* Prova con svg */
+}
 
 .sidebar .logo{
     padding-left: 10px;
