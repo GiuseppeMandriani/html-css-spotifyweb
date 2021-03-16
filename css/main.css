@@ -9,7 +9,6 @@ body{
     color: #fff;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    background-color:#000;
 }
 
 /* UTILITIES */
@@ -23,11 +22,6 @@ body{
 .mg-rt-xs{
     margin-right:5px;
 }
-
-/* .logo-special path{
-    fill: green;
-} */
-
 
 /* Buttons */
 
@@ -59,14 +53,14 @@ body{
     background-color:transparent;
     border: none;
     color: #707070;
-    font-size: .70rem;
+    font-size: .90rem;
     cursor: pointer;
     transition: .3s;
 }
 
 .btn-icons.btn-player{
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -117,7 +111,6 @@ body{
 /* Text class */
 .album-title{
     font-size:.8rem;
-    color: #fff;
     font-weight: 600;
     margin-bottom: 10px;
     text-align: center;
@@ -136,10 +129,7 @@ body{
     display: none;
 }
 
-
-
 /* MAIN-CONTENT */
-
 
 .main-window {
     height: calc(100vh - 80px);
@@ -288,6 +278,7 @@ body{
 
 .content-menu .menu-inline{
     height: 50px;
+    position:relative;
 }
 
 .content-menu .menu-inline li a::before{
@@ -301,6 +292,8 @@ body{
     background-color:transparent;
     height: 2px;
 }
+
+
 
 
 /* Category */
@@ -383,10 +376,6 @@ body{
     border-radius:50%;
 }
 
-
-
-
-
 /* PLAYER */
 .player{
     height:80px;
@@ -455,7 +444,7 @@ body{
     display: flex;
     align-items:center; 
     cursor:pointer;
-    width: 100%;
+    width: 90%;
 }
 
 .controller-bar span{
@@ -474,23 +463,12 @@ body{
 }
 
 
-/* .time-scored-bar{
-    width: 20%;
-    height: 100%;
-    background-color: #fff;
-    border-radius:5px;
-    position: relative;
-    transition: .3s;
-} */
-
 .time-scored-bar{
     height: 100%;
     border-radius:5px;
     position: relative;
-    animation: riempimento 60s linear .3s 2;
+    animation: riempimento 50s linear .3s 1;
 }
-
-
 
 @keyframes riempimento{
     0%{width: 0%;
@@ -547,8 +525,6 @@ body{
     border-radius: 5px;
 }
 
-
-
 /* HOVER EFFECT ------- ACTIVE/FOCUS*/
 
 /* SIDEBAR */
@@ -560,7 +536,9 @@ body{
 
 }
 
+
 /* Search-nav */
+
 .search .menu-nav li:hover{
     border-left: 3px solid #adff2f;
 }
@@ -584,8 +562,6 @@ body{
     color: #fff;
 }
 
-
-
 /* CONTENT */
 
 /* Top-bar */
@@ -594,7 +570,7 @@ body{
 }
 
 /* Menu-nav */
-.content-menu .menu-inline li:hover a::before {
+.content-menu .menu-inline li:hover a::before{
     background-color:#adff2f;
 }
 .content-menu .menu-inline li:hover a{
@@ -647,7 +623,7 @@ color: #adff2f;
 
 
 
-/* RESPONSIVE FOR DESKTOP/TABLET  da 1024px a 768*/
+/************* RESPONSIVE FOR DESKTOP/TABLET  da 1024px a 768*********/
 
 @media screen and (max-width:1024px){
 
@@ -818,11 +794,11 @@ body {
 .player-album,
 .player-sound{
      flex-basis: 180px;
- 
  }
 
-
 }
+
+
 
 
 
