@@ -446,6 +446,7 @@ body{
 
 .controller-bar{
     display: flex;
+    justify-content:center;
     align-items:center; 
     cursor:pointer;
     width: 100%;
@@ -707,7 +708,8 @@ body {
     font-size:0.7rem;
 }
 
-
+.player-controller .music-bar .menu-inline li button.btn-icons.btn-icons.btn-player.big{
+    font-size:.9rem;
 }
 
 /* RESPONSIVE FOR SMARTPHONE DA 600 A SCENDERE */
