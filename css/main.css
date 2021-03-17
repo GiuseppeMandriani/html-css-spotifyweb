@@ -469,35 +469,33 @@ body{
     border-radius:5px;
     position: relative;
     animation: riempimento 50s linear .3s 1;
+    background-color:#fff
 }
 
 @keyframes riempimento{
     0%{width: 0%;
-        background-color: #fff;
+        /* background-color: transparent; */
     }
 
     25%{
         width: 25%;
-        background-color: #fff;
     }
 
     50%{
         width:50%;
-        background-color: #fff;
 
     }
 
     75%{
         width:75%;
-        background-color: #fff;
     }
 
     100%{
         width:100%;
-        background-color: #fff;
     }
 
 }
+
 
 
 .controller-bar .bar-song .time-scored-bar::after{
@@ -604,8 +602,9 @@ transform: scale(1.5);
 color: #adff2f;
 }
 
-.controller-bar:hover .bar-song .time-scored-bar,
-.controller-bar:hover .bar-song .time-scored-bar::after{
+
+.controller-bar:hover .bar-song .time-scored-bar::after,
+.controller-bar:hover .bar-song .time-scored-bar{
     background-color:#adff2f;
 }
 
