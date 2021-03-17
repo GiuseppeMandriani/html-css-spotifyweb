@@ -53,14 +53,18 @@ body{
     background-color:transparent;
     border: none;
     color: #707070;
-    font-size: .90rem;
+    font-size: .80rem;
     cursor: pointer;
     transition: .3s;
 }
 
 .btn-icons.btn-player{
     color: #fff;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+}
+
+.btn-icons.btn-player.big{
+    font-size:1.2rem;
 }
 
 
@@ -444,7 +448,7 @@ body{
     display: flex;
     align-items:center; 
     cursor:pointer;
-    width: 90%;
+    width: 100%;
 }
 
 .controller-bar span{
@@ -455,7 +459,7 @@ body{
 }
 
 .bar-song{
-    width: 100%;
+    width: 80%;
     height: 3px;
     border-radius:5px;
     background-color:#5a5a5a;
@@ -681,6 +685,7 @@ body {
 .player-album,
 .player-sound{
     flex-basis: 200px;
+    flex-shrink: 0;
  
 }
 
@@ -699,7 +704,7 @@ body {
 /* Player-Controller */
  
 .player-controller .music-bar .menu-inline li button{
-    font-size:0.9rem;
+    font-size:0.7rem;
 }
 
 
