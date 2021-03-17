@@ -661,8 +661,8 @@ body {
 
 }
 
-/* RESPONSIVE FOR TABLET/SMARTPHONE  da 767px a 601*/
-@media screen and (max-width:767px){
+/* RESPONSIVE FOR TABLET/SMARTPHONE  da 768px a 601*/
+@media screen and (max-width:768px){
 
 /* Category */
 
@@ -759,6 +759,12 @@ body {
 }
 
 /* Sidebar-Bottom */
+
+.sidebar-bottom{
+    display: flex;
+    align-items: flex-end;
+}
+
 .sidebar-bottom .account-nav li a{
     display: none;
 }
