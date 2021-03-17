@@ -196,7 +196,6 @@ body{
     font-size:.8rem;
 }
 
-
 /* Library */
 
 .sidebar-top h5{
@@ -296,8 +295,6 @@ body{
     background-color:transparent;
     height: 2px;
 }
-
-
 
 
 /* Category */
@@ -464,7 +461,6 @@ body{
     height: 3px;
     border-radius:5px;
     background-color:#5a5a5a;
-    
 }
 
 
@@ -687,7 +683,6 @@ body {
 .player-sound{
     flex-basis: 200px;
     flex-shrink: 0;
- 
 }
 
 /* Player-Album */
@@ -710,6 +705,8 @@ body {
 
 .player-controller .music-bar .menu-inline li button.btn-icons.btn-icons.btn-player.big{
     font-size:.9rem;
+}
+
 }
 
 /* RESPONSIVE FOR SMARTPHONE DA 600 A SCENDERE */
@@ -804,7 +801,6 @@ body {
  }
 
 }
-
 
 
 
